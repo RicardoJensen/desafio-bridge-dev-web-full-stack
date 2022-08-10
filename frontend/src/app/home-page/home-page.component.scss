@@ -1,0 +1,24 @@
+.home-page-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 992px)  and (orientation: landscape) {
+
+    .home-page-container {
+        width: 90%;
+        margin-top: 10vh;
+    }
+
+}
+
+@media screen and (max-width: 992px)  and (orientation: portrait) {
+
+    .home-page-container {
+        width: 90%;
+        margin-top: 10vh;
+    }
+
+}

@@ -1,0 +1,21 @@
+<div>
+  <form (ngSubmit)="submit()">
+    <div class="form-group d-flex gap-3">
+      <input 
+        type="number"
+        name="inputNumber"
+        id="inputNumber"
+        class="form-control"
+        placeholder="Digite um número aqui"
+        [disabled]="isLoading"
+        [ngClass]="{'input-disabled': isLoading, 'error-border' : !valid}"
+        (keypress)="handleKeypress($event)"
+        [(ngModel)]="n"
+      >
+      <button type="submit" class="btn btn-primary" [disabled]="isLoading">Calcular</button>
+    </div>
+    <div *ngIf="!valid" class="invalid-feedback">
+      {{errorText}}
+    </div>
+  </form>
+</div>

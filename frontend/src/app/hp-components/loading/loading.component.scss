@@ -1,0 +1,38 @@
+.spinner-border {
+    color: var(--blue) !important;
+    position: relative;
+    top: 66px;
+    left: 13.5%;
+}
+
+@media screen and (max-width: 1600px)  and (orientation: landscape) {
+
+    .spinner-border {
+        left: 28.1%;
+    }
+
+}
+
+@media screen and (max-width: 1600px)  and (orientation: portrait) {
+
+    .spinner-border {
+        left: 28.1%;
+    }
+
+}
+
+@media screen and (max-width: 992px)  and (orientation: landscape) {
+
+    .spinner-border {
+        left: 46%;
+    }
+
+}
+
+@media screen and (max-width: 992px)  and (orientation: portrait) {
+
+    .spinner-border {
+        left: 46%;
+    }
+
+}

@@ -1,0 +1,68 @@
+.history-container {
+    position: absolute;
+    top: 26px;
+    right: 96px;
+}
+
+.btn-outline-primary, .btn-primary {
+    background-color: var(--bg-color);
+    border-color: var(--blue);
+    font-family: IBM Plex Sans;
+    color: var(--blue);
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+.btn-primary {
+    background-color: var(--blue);
+    color: var(--bg-color);
+}
+
+.btn-outline-primary:hover, .btn-primary:hover {
+    filter: brightness(90%);
+}
+
+.btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:visited,
+.btn-close:focus, .btn-close:active, .btn-close:visited {
+    box-shadow: none;
+}
+
+.modal {
+    background-color: #00000099;
+}
+
+.modal-content {
+    // 56px (same spacing top and bottom)
+    max-height: calc(100vh - 56px);
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    font-family: IBM Plex Sans;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.table {
+    color: var(--dark-grey);
+}
+
+@media screen and (max-width: 576px)  and (orientation: landscape) {
+
+    .modal-content {
+        // 9px (same spacing top and bottom)
+        max-height: calc(100vh - 9px);
+    }
+
+}
+
+@media screen and (max-width: 576px)  and (orientation: portrait) {
+
+    .modal-content {
+        // 9px (same spacing top and bottom)
+        max-height: calc(100vh - 9px);
+    }
+
+}

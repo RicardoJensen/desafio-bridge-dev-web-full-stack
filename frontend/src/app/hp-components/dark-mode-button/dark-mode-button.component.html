@@ -1,0 +1,10 @@
+<div class="dark-mode-button-container">
+    <button class="dark-mode-button" (click)="toggleDarkMode()">
+        <span *ngIf="darkMode" class="material-icons-outlined">
+            light_mode
+        </span>
+        <span *ngIf="!darkMode" class="material-icons-outlined">
+            dark_mode
+        </span>
+    </button>
+</div>

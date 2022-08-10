@@ -1,0 +1,8 @@
+<div class="mb-4" [ngClass]="{'example-active': toggleExaple}">
+    <button type="button" class="btn btn-outline-primary" (click)="changeValue()">
+        Exemplo
+    </button>
+    <p *ngIf="toggleExaple">
+        {{exampleText}}
+    </p>
+</div>

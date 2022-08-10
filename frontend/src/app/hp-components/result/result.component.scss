@@ -1,0 +1,50 @@
+.list-group-item {
+    width: 15%;
+    background-color: var(--bg-color);
+    border-color: var(--blue);
+    color: var(--dark-grey);
+    font-family: IBM Plex Sans;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.material-icons-outlined {
+    color: var(--blue);
+    line-height: 0px;
+    position: relative;
+    top: 6px;
+    right: 6px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1600px)  and (orientation: landscape) {
+
+    .list-group-item {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 1600px)  and (orientation: portrait) {
+
+    .list-group-item {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 992px)  and (orientation: landscape) {
+
+    .list-group-item {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 992px)  and (orientation: portrait) {
+
+    .list-group-item {
+        width: 50%;
+    }
+
+}

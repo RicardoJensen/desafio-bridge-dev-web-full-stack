@@ -1,0 +1,60 @@
+<div class="history-container">
+    <button type="button" class="btn btn-outline-primary" (click)="toogleModal()">
+        Histórico
+    </button>
+</div>
+
+<div class="modal" [ngStyle]="{display: showModal ? 'block' : 'none'}" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <h5 class="modal-title ">
+                    Histórico dos números calculados
+                </h5>
+                <button type="button" class="btn-close" aria-label="Close" (click)="toogleModal()"></button>
+            </div>
+            <div class="modal-body overflow-auto">
+                <ng-container *ngIf="historyData.length > 0; else historyEmpty">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    Número
+                                </th>
+                                <th scope="col">
+                                    Resultado
+                                </th>
+                                <th scope="col">
+                                    Tempo
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody *ngFor="let data of historyData" class="border-0">
+                            <tr>
+                                <td>
+                                    {{data.input}}
+                                </td>
+                                <td>
+                                    {{data.amount}}
+                                </td>
+                                <td>
+                                    {{data.time}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </ng-container>
+                <ng-template #historyEmpty>
+                    <p>
+                        Histórico vazio
+                    </p>
+                </ng-template>
+            </div>
+            <div class="modal-footer border-top-0">
+                <button type="button" class="btn btn-primary m-auto" [disabled]="historyData.length == 0" (click)="emitClearHistory()">
+                    Limpar Histórico
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

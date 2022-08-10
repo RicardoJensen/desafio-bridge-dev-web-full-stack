@@ -1,0 +1,60 @@
+.btn-outline-primary {
+    background-color: var(--bg-color);
+    border-color: var(--blue);
+    font-family: IBM Plex Sans;
+    color: var(--blue);
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+p {
+    color: var(--dark-grey);
+    font-family: IBM Plex Sans;
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: -15px;
+    text-align: justify;
+}
+
+.example-active {
+    border: 1px solid var(--blue);
+    border-radius: 0.25rem;
+    padding: 20px;
+    width: 60%;
+    background-color: var(--light-grey);
+}
+
+.example-active > button {
+    position: relative;
+    left: -20px;
+    top: -20px;
+    border-top: none;
+    border-left: none;
+}
+
+.btn-outline-primary:hover {
+    filter: brightness(90%);
+}
+
+.btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:visited {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 992px)  and (orientation: landscape) {
+
+    .example-active {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 992px)  and (orientation: portrait) {
+
+    .example-active {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,23 @@
+<div class="home-page-container">
+    <app-history [historyData]="historyData" (clearHistory)="clearHistory()"></app-history>
+    <app-dark-mode-button></app-dark-mode-button>
+    <app-heading [headingText]="'Desafio'"></app-heading>
+    <app-paragraph [paragraphText]="paragraphText"></app-paragraph>
+    <app-example [exampleText]="exampleText"></app-example>
+    <app-form (result)="updateResult($event)" (loading)="toogleLoading($event)"></app-form>
+    <ng-container *ngIf="!loading; else loadingComponent">
+        <app-result 
+            [resultText]="'Resultado'"
+            [resultNumber]="result.amount"
+            [resultIcon]="'calculate'"
+        ></app-result>
+        <app-result
+            [resultText]="'Tempo'"
+            [resultNumber]="result.time"
+            [resultIcon]="'timer'"
+        ></app-result>
+    </ng-container>
+    <ng-template #loadingComponent>
+        <app-loading></app-loading>
+    </ng-template>
+</div>

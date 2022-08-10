@@ -1,0 +1,21 @@
+.dark-mode-button-container {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.dark-mode-button {
+    height: 38px;
+    width: 38px;
+    color: var(--blue);
+    background-color: var(--bg-color);
+    border: var(--blue) 1px solid;
+    border-radius: 0.25rem;
+    line-height: 0px;
+    position: relative;
+    top: -4px;
+}
+
+.dark-mode-button:hover {
+    filter: brightness(90%);
+}
